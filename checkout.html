@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Same head content as index.html -->
+</head>
+<body>
+     <link rel="stylesheet" href="style.css">
+    <!-- Same loader and navigation as index.html -->
+      <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo" data-aos="fade-down">
+                <span class="logo-icon">🪔</span>
+                <span class="logo-text">Chaurasiya Pan Dukan</span>
+            </a>
+            <div class="nav-links" data-aos="fade-down">
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </div>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Checkout Section -->
+    <section class="checkout-section">
+        <div class="container">
+            <h1 data-aos="fade-up">Checkout</h1>
+            
+            <div class="checkout-steps" data-aos="fade-up">
+                <div class="step active">
+                    <div class="step-number">1</div>
+                    <div class="step-title">Shipping</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-title">Payment</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-title">Confirmation</div>
+                </div>
+            </div>
+            
+            <div class="checkout-grid">
+                <!-- Checkout Form -->
+                <div class="checkout-form" data-aos="fade-right">
+                    <h3>Shipping Information</h3>
+                    
+                    <form id="shipping-form">
+                        <div class="form-group">
+                            <label for="full-name">Full Name</label>
+                            <input type="text" id="full-name" required>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="address">Address</label>
+                            <input type="text" id="address" required>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="city">City</label>
+                                <input type="text" id="city" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="state">State</label>
+                                <select id="state" required>
+                                    <option value="">Select State</option>
+                                    <option value="UP">Uttar Pradesh</option>
+                                    <option value="MP">Madhya Pradesh</option>
+                                    <option value="MH">Maharashtra</option>
+                                    <option value="DL">Delhi</option>
+                                    <option value="BR">Bihar</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="pincode">Pincode</label>
+                                <input type="text" id="pincode" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="notes">Order Notes (Optional)</label>
+                            <textarea id="notes" rows="3"></textarea>
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- Order Summary -->
+                <div class="order-summary" data-aos="fade-left">
+                    <h3>Your Order</h3>
+                    
+                    <div class="summary-items">
+                        <div class="summary-item">
+                            <div class="item-name">Premium Pan Masala × 2</div>
+                            <div class="item-price">₹50</div>
+                        </div>
+                        <div class="summary-item">
+                            <div class="item-name">Classic Tobacco × 1</div>
+                            <div class="item-price">₹50</div>
+                        </div>
+                    </div>
+                    
+                    <div class="summary-totals">
+                        <div class="total-row">
+                            <span>Subtotal</span>
+                            <span>₹100</span>
+                        </div>
+                        <div class="total-row">
+                            <span>Shipping</span>
+                            <span>₹20</span>
+                        </div>
+                        <div class="total-row">
+                            <span>Tax</span>
+                            <span>₹12</span>
+                        </div>
+                        <div class="total-row grand-total">
+                            <span>Total</span>
+                            <span>₹132</span>
+                        </div>
+                    </div>
+                    
+                    <div class="payment-methods">
+                        <h4>Payment Method</h4>
+                        <div class="payment-option">
+                            <input type="radio" id="cod" name="payment" checked>
+                            <label for="cod">Cash on Delivery</label>
+                        </div>
+                        <div class="payment-option">
+                            <input type="radio" id="upi" name="payment">
+                            <label for="upi">UPI Payment</label>
+                        </div>
+                        <div class="payment-option">
+                            <input type="radio" id="card" name="payment">
+                            <label for="card">Credit/Debit Card</label>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" form="shipping-form" class="btn btn-primary btn-place-order">Place Order</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Same footer as index.html -->
+       <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Chaurasiya Pan Dukan</h3>
+                    <p>"Ek Baar Khaoge, Baar Baar Aaoge!"</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i>Rupani Bazar saptari , Nepal</li>
+                        <li><i class="fas fa-phone"></i> +91 9876543210</li>
+                        <li><i class="fas fa-envelope"></i> info@chaurasiyapandukan.com</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe for updates and offers</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Chaurasiya Pan Dukan. All Rights Reserved.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fas fa-money-bill-wave"></i>
+                    <i class="fas fa-qrcode"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+     <!-- Scroll to Top Button -->
+    <button class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+        // Checkout Page JavaScript
+        $(document).ready(function() {
+            // Place Order Button
+            $('.btn-place-order').click(function(e) {
+                e.preventDefault();
+                // Here you would validate the form and process the order
+                alert('Your order has been placed successfully! Thank you for shopping with us.');
+                // Redirect to confirmation page
+                window.location.href = 'order-confirmation.html';
+            });
+        });
+    </script>
+</body>
+</html>
